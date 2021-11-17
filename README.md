@@ -2,9 +2,13 @@
 
 Stripped and publicized libraries from Outer Wilds.
 
-## Usage
-
 If the game gets updated, this package needs to get updated too.
+
+`strip-assembiles.bat` does two things:
+- Strips game assembiles using [NStrip](https://github.com/BepInEx/NStrip). This removes game code and leaves only API definitions.
+- Publicizes `Assembly.CSharp.dll` and `AAssembly-CSharp-firstpass.dll`. This makes all types, methods, properties and fields public, to make modding easier.
+
+## Usage
 
 - Make sure you start off with a clean `OuterWilds_Data\Managed`, with no extra dlls (like OWML), and no modified dlls.
 - Drag `OuterWilds.exe` and drop it on `strip-assembiles.bat`.
