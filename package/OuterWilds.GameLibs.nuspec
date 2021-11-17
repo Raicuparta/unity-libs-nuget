@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>OuterWilds.GameLibs</id>
+    <id>OuterWildsGameLibs</id>
     <version>1.1.11.72</version>
     <title>Outer Wilds Game Libs</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
