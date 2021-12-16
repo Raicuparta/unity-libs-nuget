@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: NuGet/setup-nuget@v1.0.5
       - name: Pack nuget
-        run: nuget pack package -OutputFileNamesWithoutVersion -OutputDirectory build -Properties git="https://github.com/${{ github.repository }}.git";name=${{ github.event.repository.name }};author=${{ github.event.repository.author }};description=${{ github.event.repository.description }}
+        run: nuget pack package -OutputFileNamesWithoutVersion -OutputDirectory build -Properties "git=https://github.com/${{ github.repository }}.git;name=${{ github.event.repository.name }};author=${{ github.event.repository.author }};description=${{ github.event.repository.description }}"
       - name: Publish nuget
         run: |
           nuget push "build/${{ github.event.repository.name }}.nupkg" -ApiKey ${{ secrets.NUGET_KEY }} -Source https://api.nuget.org/v3/index.json
