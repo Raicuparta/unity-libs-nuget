@@ -19,3 +19,7 @@ If the game gets updated, this package needs to get updated too.
 - Edit the `.nuspec` file, make `<version>` match the current game version.
 - Open a PR or push to master.
 - Updating master will trigger a workflow that will pack the dlls and update the NuGet package.
+
+## Publicized assemblies
+
+By default, only `Assembly-CSharp.dll` and `Assembly-CSharp-firstpass.dll` are publicized. All other dlls are stripped only. To publicize other dlls, edit `strip-assemblies.bat` and add the dll names to the `toPublicize` variable.
