@@ -20,7 +20,7 @@ set outPath=%~dp0\package\lib
 (for %%a in (%toPublicize%) do (
   echo a: %%a
 
-  %~dp0\tools\NStrip.exe "%managedPath%\%%a" -o "%outPath%\%%a.dll" -cg -p --cg-exclude-events
+  %~dp0\tools\NStrip.exe "%managedPath%\%%a" -o "%outPath%\%%a" -cg -p --cg-exclude-events
 ))
 
 pause
