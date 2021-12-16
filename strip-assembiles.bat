@@ -5,7 +5,7 @@ echo exePath: %exePath%
 @REM Remove quotes
 set exePath=%exePath:"=%
 
-set managedPath=%exePath:OuterWilds.exe=OuterWilds_Data\Managed%
+set managedPath=%exePath:.exe=_Data\Managed%
 echo managedPath: %managedPath%
 
 set outPath=%~dp0\package\lib\net46
