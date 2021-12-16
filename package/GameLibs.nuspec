@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+    <!-- Version of your nuget package. Should reflect the game version where the libs come from. -->
+    <version>1.0.0</version>
+
+    <!-- The GitHub workflow will automatically populate these. -->
+    <id>$name$</id>
+    <title>$name$</title>
+    <authors>$author$</authors>
+    <description>$description$</description>
+    <repository type="git" url="$git$" />
+  </metadata>
+</package>
