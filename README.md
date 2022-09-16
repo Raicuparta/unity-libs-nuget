@@ -33,8 +33,8 @@ If the game gets updated, this package needs to get updated too.
 ### Updating the Nuget
 
 - Edit the `.nuspec` file, make `<version>` match the game version where these assemblies come from.
-- Push to master.
-- Updating master will trigger a workflow that will pack the dlls and update the NuGet package.
+- Push to the default branch.
+- Updating the default branch will trigger a workflow that will pack the dlls and update the NuGet package.
 
 ### Publicized assemblies
 
