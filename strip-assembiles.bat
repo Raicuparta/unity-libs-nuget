@@ -1,7 +1,10 @@
 @echo off 
 
+@REM Add all the assemblies you want to publicize in this list
 set toPublicize=Assembly-CSharp.dll Assembly-CSharp-firstpass.dll
-set dontTouch=Newtonsoft.Json.dll mscorlib.dll netstandard.dll System.Core.dll System.Data.dll System.dll
+
+@REM Add all the assemblies you want to copy as-is to the package in this list
+set dontTouch=
 
 set exePath=%1
 echo exePath: %exePath% 
